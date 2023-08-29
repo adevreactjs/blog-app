@@ -1,9 +1,13 @@
-import { PostProps } from "@/types";
+'use client';
 
-const posts:PostProps[] = [
- { title: 'React Testing',
-  excerpt:  'Learn React Testing'}
-]
+import { PostProps } from '@/types';
+import PostCard from '../../components/PostCard';
+
+const posts: PostProps[] = [
+  { title: 'React Testing1', excerpt: 'Learn React Testing' },
+  { title: 'React Testing2', excerpt: 'Learn React Testing' },
+  { title: 'React Testing3', excerpt: 'Learn React Testing' },
+];
 
 export default function Home() {
   return (
@@ -11,10 +15,7 @@ export default function Home() {
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div>
           {posts.map(post => (
-            <div key={post.title} className='col-span-1 lg:col-span-12'>
-              {post.title}
-              {post.excerpt}
-            </div>
+            <PostCard key={post.title} post={post} />
           ))}
         </div>
         <div className='lg:col-span-4 col-span-1'></div>
