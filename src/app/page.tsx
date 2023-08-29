@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { PostProps } from '@/types';
 import PostCard from '../../components/PostCard';
 import PostWidget from '../../components/PostWidget';
@@ -21,6 +22,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+=======
+
+export default function Home() {
+  return (
+    <main>
+      <div>hello</div>
+>>>>>>> parent of 0fa2a76... settings
     </main>
   );
 }
