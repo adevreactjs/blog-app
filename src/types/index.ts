@@ -1,5 +1,6 @@
 export interface PostProps {
-  slug: any;
+  author: any;
+  slug: string;
   featuredImage: any;
   title: string;
   excerpt: string;

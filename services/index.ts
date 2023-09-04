@@ -13,6 +13,9 @@ export const getPosts = async () => {
               bio
               name
               id
+              photo {
+                url
+              }
             }
             createdAt
             slug
